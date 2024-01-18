@@ -1,0 +1,117 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeecc; /* Light yellow background */
+}
+
+header {
+    background-color: #ff9999; /* Light pink header */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+button{
+    display: block;
+}
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 20px;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    flex: 1;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #ffcc66; /* Light orange button */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff9966; /* Darker orange on hover */
+}
+
+#repositories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repository-card {
+    width: 48%; /* Set to 48% to allow for some spacing between cards */
+    margin: 1%; /* Adjust margin as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.repository-card {
+    background-color: #ffd699; /* Lighter orange repository card */
+    border: 1px solid #ffcc66;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(234, 101, 0, 0.7);
+    transition:  0.3s ease, color 0.3s ease;
+
+}
+.repository-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(141, 64, 1, 0.8)
+}
+.repository-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.repository-card img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 5px;
+}
+
+#loader {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#userCard {
+    background-color: #ffd699; /* Lighter orange user card */
+    border: 1px solid #ffcc66;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#userAvatar {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
